@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="redes.html">Redes</a></li>                
+
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <h1 class="titulo-contato">Entre em contato comigo</h1>
+
+    <form>
+        <label for="nome">Nome e Sobrenome</label>
+        <input type="text" id="nome" class="input-padrao" onkeyup="validarNome()">
+        <div id="txtNome"></div>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" class="input-padrao" onkeyup="validarEmail()">
+        <div id="txtEmail"></div>
+
+        <label for="assunto">Assunto</label>
+        <textarea name="assunto" id="assunto" cols="70" rows="10" class="input-padrao" onkeyup="validarAssunto()"></textarea>
+        <div id="txtAssunto"></div>
+
+        <button class="enviar" onclick="enviar()">Enviar</button>
+    </form>
+
+    <footer>
+        <p class="Copyright">&copy; Copyright Portfólio Luiza Grazielly - 2022</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>    
+</body>
+</html>
